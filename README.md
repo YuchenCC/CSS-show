@@ -1,6 +1,10 @@
 # CSS-show
 纯CSS绘制卡通人物，以及canvas 和 svg的综合运用
 
+预览链接：https://yuchencc.github.io/CSS-show/.
+
+扫描二维码：![1499678774.png](https://ooo.0o0.ooo/2017/07/10/5963485cc75ae.png)
+
 实现内容
 
 - 纯div+css绘制时钟
