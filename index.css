@@ -44,6 +44,7 @@
   border-radius: 30px;
   width: 80px;
   height: 30px;
+  line-height:30px;
   background: transparent;
   border: 1px solid black;
   margin-left: 20px;
@@ -226,6 +227,7 @@
   transition: 0.5s all;
 }
 #taiji{
+	
   position:absolute;
   top:50%;
   left:50%;
