@@ -3,8 +3,7 @@
 }
 
 #drawWarrper{
-  margin-bottom: 20px;
-  height: 100vh;
+  height:100vh;
   width: 100%;
   text-align: center;
   display: -webkit-box;
@@ -15,14 +14,13 @@
       -ms-flex-direction: column;
           flex-direction: column;
   -ms-flex-negative: 0;
-      flex-shrink: 0;
   overflow:hidden;
 }
 #drawFrame{
   background: white;
   box-shadow: 0 0 10px #ccc;
   width:90%;
-  height: 90%;
+  height: 80%;
   margin: 10px auto;  
   border: 2px solid black;
   position:relative;
@@ -53,6 +51,7 @@
 }
 #choice{
   -webkit-box-flex:1;
+  margin-bottom: 20px;
       -ms-flex-positive:1;
           flex-grow:1;
 }
@@ -243,7 +242,7 @@
 #doraemon{
   height: 80%;
   position:absolute;
-  top:50%;
+  top:30%;
   left:50%;
   -webkit-transform: translate3d(-50%,-50%,0);
           transform: translate3d(-50%,-50%,0)
@@ -701,9 +700,6 @@ div.hand_circle{
 	position:relative;
 	width:4px;
 	height:50px;
-	background:#07beea;
-	background: -webkit-linear-gradient(top left, #0096be, #0096be);
-	background: linear-gradient(to bottom right, #0096be, #0096be); 
 	top:-52px;
 	left:92px;
 }

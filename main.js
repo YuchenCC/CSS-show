@@ -90,7 +90,7 @@ function initTaiji(width){
 }
 function initDoraemon(width){
     $doraemon = $('#doraemon>.wrapper')
-    scale = width/400
+    scale = width/600
     console.log(scale)
     $doraemon.css('transform',`scale(${scale})`)
 }
