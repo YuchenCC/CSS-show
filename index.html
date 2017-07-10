@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <div id='drawWarrper'>
+        <div id="drawFrame">
+            <bottom class="control">
+                <label><input type="radio" name="tool" value="pen" checked/> BluePen</label>
+                <label><input type="radio" name="tool" value="eraser"/> Eraser</label>
+                <div id='clear'> Again</div>
+            </bottom>
+            <div id="clock">
+                <div class='skin'>
+                    <div class='clock'>
+                        <div class="hourHand"></div>
+                        <div class="minuteHand"></div>
+                        <div class="secondHand"></div>
+                        <div class='dot'></div>
+                        <span class="shuzi12">12</span>
+                        <span class="shuzi6">6</span>
+                        <span class="shuzi3">3</span>
+                        <span class="shuzi9">9</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="captain" >
+                <svg width=500 height=500>
+                    <linearGradient id="Gradient2" x1="0" x2="0" y1="0" y2="1">
+                        <stop offset="0%" stop-color="#EDEEF0" />
+                        <stop offset="30%" stop-color="#EBECEF" />
+                        <stop offset="70%" stop-color="#869197" />
+                        <stop offset="100%" stop-color="#717679" />
+
+                    </linearGradient>
+                    <g>
+                        <circle cx='250' cy='250' r='240' fill='#CB444A' stroke='black' stroke-width="1"></circle>
+                        <circle cx='250' cy='250' r='200' fill='#FEFEFE' stroke='black' stroke-width="1.5"></circle>
+                        <circle cx='250' cy='250' r='160' fill='#CB444A' stroke='black' stroke-width="1.5"></circle>
+                        <circle cx='250' cy='250' r='120' fill='#246096' stroke='black' stroke-width="1.5"></circle>
+                        <polygon points='142 210,208 260,180 342,250 290,320 342,296 260,360 210,280 210,250 134,222 210' stroke="white" fill="url(#Gradient2)"
+                            stroke-width="1.5"></polygon>
+                    </g>
+                </svg>
+            </div>
+
+            <div id="taiji" >
+                <svg width="300" height="200" viewPort="0 0 200 200" style="border:1px solid red">
+                    <defs>
+                        <filter id="f1" x="-40%" y="-40%" height="200%" width="200%">
+                            <feOffset in="SourceGraphic" dx="4" dy="0" />
+                            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="8" />
+                            <feBlend in="SourceGraphic" mode="normal" />
+                        </filter>
+                        <filter id="f2" x="-40%" y="-40%" height="200%" width="200%">
+                            <feOffset in="SourceGraphic" dx="1" dy="0" />
+                            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="1" />
+                            <feBlend in="SourceGraphic" mode="normal" />
+                        </filter>
+                        <linearGradient id="Gradient" x1="0" x2="1" y1="1" y2="1">
+                            <stop offset="0%" stop-color="#F3F5F4" />
+                            <stop offset="30%" stop-color="#DFDFDF" />
+                            <stop offset="50%" stop-color="#DFDFDF" />
+                            <stop offset="50%" stop-color="black" />
+                        </linearGradient>
+                        <linearGradient id="Gradient2" x1="0" x2="1" y1="1" y2="1">
+                            <stop offset="0%" stop-color="#163B67" />
+                            <stop offset="50%" stop-color="#4678A9" />
+                            <stop offset="85%" stop-color="#6CA0DA" />
+                            <stop offset="100%" stop-color="#5B8EC5" />
+                        </linearGradient>
+                    </defs>
+                    <rect x='0' y='0' width="300" height="200" fill='url(#Gradient2)'></rect>
+                    <circle r="50" cx="150" cy="100" style="stroke:white; fill:url(#Gradient);stroke:none" filter="url(#f1)" />
+                    <path d="M150 50
+                A 25 25, 0, 1, 1, 150 100
+                L 150 100 " style="stroke:none;fill:#DFDFDF;" filter="url(#f2)" />
+                    <path d="M150 100
+                A 25 25, 0, 1, 0, 150 150
+                L 150 150 Z" style="stroke:black;stroke-width:0px; fill:black" />
+                    <path d="M150 100 L 150 150" stroke='black' />
+                    <circle r="10" cx="150" cy="75" style="stroke:#DFDFDF; fill:black;stroke-width:1px" />
+                    <circle r="10" cx="150" cy="125" style="stroke:black; fill:#DFDFDF;stroke-width:1px" />
+                </svg>
+            </div>
+
+
+            <div id="doraemon">
+                <div class="wrapper">
+                    <div id="face">
+                        <div id="head_light"></div>
+                        <div id="eyes">
+                            <!-- 左眼 -->
+                            <div class="eye eye_left"></div>
+                            <div class="black_eye black_left"></div>
+                            <!-- 右眼 -->
+                            <div class="eye eye_right"></div>
+                            <div class="black_eye black_right"></div>
+                        </div>
+                        <div id="base">
+                            <!-- 脸 -->
+                            <div id="base_white"></div>
+                            <!-- 脸底色 -->
+                            <div id="nose">
+                                <!-- 鼻子光效 -->
+                                <div id="nose_light"></div>
+
+                            </div>
+                            <div id="nose_line"></div>
+                            <div id="mouth"></div>
+                            <!-- 六根胡须 -->
+                            <div class="whiskers whi_right_top rotate160"></div>
+                            <div class="whiskers whi_right"></div>
+                            <div class="whiskers whi_right_bottom rotate20"></div>
+                            <div class="whiskers whi_left_top rotate20"></div>
+                            <div class="whiskers whi_left"></div>
+                            <div class="whiskers whi_left_bottom rotate160"></div>
+                        </div>
+                    </div>
+
+                    <!-- 项圈 -->
+                    <div id="choker">
+                        <div id="belt"></div>
+                        <div id="bell">
+                            <div id="bell_line"></div>
+                            <div id="bell_circle"></div>
+                            <div id="bell_under"></div>
+                            <div id="bell_light"></div>
+                        </div>
+                    </div>
+
+                    <div id="body">
+                        <!-- 身体 -->
+                        <div id="doutai"></div>
+                        <!-- 肚皮 -->
+                        <div class="base_white2 doutai_center"></div>
+                        <!-- 口袋 -->
+                        <div id="pocket">
+                            <div id="circle"></div>
+                            <div id="circle_rewrite"></div>
+                        </div>
+                    </div>
+                    <!-- 左右手 -->
+                    <div id="hand_right">
+                        <div id="arm_right"></div>
+                        <div class="hand_circle hand_right"></div>
+                        <div class="arm_rewrite_right"></div>
+                    </div>
+                    <div id="hand_left">
+                        <div id="arm_left"></div>
+                        <div class="hand_circle hand_left"></div>
+                        <div class="arm_rewrite_left"></div>
+                    </div>
+                    <!-- 脚 -->
+                    <div id="foot">
+                        <div id="foot_left"></div>
+                        <div id="foot_right"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="choice">
+            <ul>
+                <li data-role='clockshow'>
+                    <img src="https://ooo.0o0.ooo/2017/07/10/596326dab37ea.png" alt="clock.png" title="clock.png" />
+                </li>
+                <li data-role='captain'>
+                    <img src="https://ooo.0o0.ooo/2017/07/10/596326daa16bd.png" alt="captain.png" title="captain.png" />
+                </li>
+                <li data-role='taiji'>
+                    <img src="https://ooo.0o0.ooo/2017/07/10/596326daa16b9.png" alt="taiji.png" title="taiji.png" />
+                </li>
+                <li data-role='doraemon'>
+                    <img src="https://ooo.0o0.ooo/2017/07/10/596326da91811.png" alt="dora.png" title="dora.png" />
+                </li>
+                <li data-role='draw'>
+                    <img src="https://ooo.0o0.ooo/2017/07/10/596327504c23b.png" alt="pen.png" title="pen.png" />
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+</body>
+<script src='http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js'></script>
+<script src='main.js'></script>
+
+</html>
